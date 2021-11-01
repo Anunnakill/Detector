@@ -1,0 +1,40 @@
+{
+  "files": [
+    "lib/**/*"
+  ],
+  "license": "ISC",
+  "version": "1.0.0",
+  "author": "JiCheng",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "name": "web-element-detector",
+  "homepage": "https://github.com/Anunnakill/Detector#readme",
+  "description": "This is a plug-in that monitors whether web elements appear in the specified container.",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "detect",
+    "browser",
+    "element",
+    "visible",
+    "detector",
+    "web-visible",
+    "element-detector"
+  ],
+  "bugs": {
+    "url": "https://github.com/Anunnakill/Detector/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anunnakill/Detector.git"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
