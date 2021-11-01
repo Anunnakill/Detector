@@ -4,7 +4,7 @@
 
 This is a plug-in that monitors whether web elements appear in the specified container.
 
-❗️Important reminder: It is based on the browser [IntersectionObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/Intersection_Observer_API) api.
+❗️Important reminder: It is based on the browser [IntersectionObserver API](https://developer.mozilla.org/zh-CN/docs/Web/API/Intersection_Observer_API).
 
 It can detect the display and hiding of elements (enter the container visual area, exit the container visual area).
 
@@ -72,5 +72,8 @@ Observer({
 // E.g: [document.querySelector(".item")].
 
 // Other options are from IntersectionObserver api.
-// Link: https://developer.mozilla.org/zh-CN/docs/Web/API/Intersection_Observer_API
 ```
+
+### Based on
+
+[IntersectionObserver API](https://developer.mozilla.org/zh-CN/docs/Web/API/Intersection_Observer_API).
