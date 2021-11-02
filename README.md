@@ -12,7 +12,7 @@ It can detect the display and hiding of elements (enter the container visual are
 
 Some requirements are to perform animation when one or some elements enter the visible area of the specified container, so for such requirements, this plug-in is sufficient for you.
 
-Support TS.
+Support TS, comes with type declaration file.✅
 
 ## Code Repository
 
