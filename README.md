@@ -41,14 +41,23 @@ import Observer from "web-element-detector";
 ```
 
 ```html
-<div class="item" data-status="hidden" data-animate="animate" />
+<div class="item" data-status="hidden" />
+
+<div class="item" data-status="hidden" data-animate="animate1" />
+
+<div class="item" data-status="hidden" data-animate="animate2" />
+
+<div class="item" data-status="hidden" data-animate3="animate3" />
+
+<div class="item" data-status="hidden" data-animate4="animate4" />
 
 <!-- data-status="hidden": -->
-<!-- Element default initialization state, data-status cannot be changed, hidden can.-->
+<!-- Element default initialization state, data-status and hidden cannot be changed, it is fixed and needs to be used during detection and cannot be changed. -->
 <!-- When the element appears, the status will become data-status="visible". -->
 
 <!-- data-animate="animate": -->
 <!-- The style of the element when it appears. -->
+<!-- data-animate and animate can be customized and changed. -->
 ```
 
 ```css
@@ -58,7 +67,23 @@ import Observer from "web-element-detector";
 }
 
 /* Element display status */
-*[data-status="visible"][data-animate="animate"] {
+*[data-status="visible"] {
+  opacity: 0.3;
+}
+
+*[data-status="visible"][data-animate="animate1"] {
+  opacity: 0.5;
+}
+
+*[data-status="visible"][data-animate="animate2"] {
+  opacity: 0.7;
+}
+
+div[data-status="visible"][data-animate3="animate3"] {
+  opacity: 0.9;
+}
+
+.item[data-status="visible"][data-animate4="animate4"] {
   opacity: 1;
 }
 ```
@@ -72,6 +97,10 @@ Observer({
 // The eles field is a collection of element dom nodes, Is the collection of elements to be monitored.
 // If there is only one monitored element, it must be placed in an array.
 // E.g: [document.querySelector(".item")].
+Observer({
+  eles: [document.querySelector(".item")],
+  // ...options
+});
 
 // Other options are from Intersection Observer API.
 ```
